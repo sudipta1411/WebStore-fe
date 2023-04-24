@@ -1,1 +1,16 @@
 /* app global css */
+.q-header {
+  height: 95px;
+}
+
+.q-footer {
+  height: 120px;
+}
+
+.q-header--dark {
+  background: rgb(122, 121, 119);
+}
+.q-header--light {
+  background: rgb(238, 238, 238);
+  color: black;
+}
