@@ -1,6 +1,5 @@
 <template>
   <q-header
-    elevated
     :class="$q.dark.isActive ? 'q-header--dark' : 'q-header--light'"
     height-hint="200"
   >
