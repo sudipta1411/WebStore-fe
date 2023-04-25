@@ -10,11 +10,21 @@
         </q-avatar>
         WebStore
       </q-toolbar-title>
+      <div class="q-ml-sm row no-wrap items-center">
+        <q-btn
+          type="a"
+          flat
+          round
+          :icon="mdiDeskLamp"
+          @click="$q.dark.toggle()"
+        />
+      </div>
     </q-toolbar>
   </q-header>
 </template>
 <script>
 import { useQuasar } from "quasar";
+import { mdiDeskLamp } from "@quasar/extras/mdi-v6";
 export default {
   mounted() {
     const $q = useQuasar();
