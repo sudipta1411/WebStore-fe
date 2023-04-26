@@ -1,4 +1,13 @@
 /* app global css */
+@font-face {
+  font-family: bruno-ace;
+  src: url(./fonts/BrunoAceSC-Regular.ttf);
+}
+
+.bruno-font {
+  font-family: "bruno-ace";
+}
+
 .q-header {
   height: 95px;
 }
