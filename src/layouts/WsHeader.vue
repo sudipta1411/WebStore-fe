@@ -15,7 +15,7 @@
           type="a"
           flat
           round
-          :icon="mdiDeskLamp"
+          :icon="!$q.dark.isActive ? 'mdi-desk-lamp-on' : 'mdi-desk-lamp-off'"
           @click="$q.dark.toggle()"
         />
       </div>
@@ -24,7 +24,6 @@
 </template>
 <script>
 import { useQuasar } from "quasar";
-import { mdiDeskLamp } from "@quasar/extras/mdi-v6";
 export default {
   mounted() {
     const $q = useQuasar();
