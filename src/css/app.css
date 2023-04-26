@@ -18,7 +18,23 @@
 }
 
 .q-header--dark {
-  background: rgb(122, 121, 119);
+  background: radial-gradient(
+    circle,
+    rgba(2, 10, 32, 1) 0%,
+    rgba(3, 5, 10, 1) 49%,
+    rgba(13, 15, 22, 1) 100%
+  );
+  color: bisque;
+}
+.q-footer--dark {
+  background: radial-gradient(
+    circle,
+    rgba(2, 10, 32, 1) 0%,
+    rgba(3, 5, 10, 1) 49%,
+    rgba(13, 15, 22, 1) 100%
+  );
+
+  color: bisque;
 }
 .q-header--light {
   background: radial-gradient(

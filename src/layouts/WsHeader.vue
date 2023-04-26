@@ -15,6 +15,30 @@
           type="a"
           flat
           round
+          icon="mdi-instagram"
+          href="https://www.instgram.com"
+          target="_blank"
+        />
+        <q-btn
+          type="a"
+          flat
+          round
+          icon="mdi-twitter"
+          href="https://www.twitter.com"
+          target="_blank"
+        />
+        <q-btn
+          type="a"
+          flat
+          round
+          icon="mdi-facebook"
+          href="https://www.facebook.com"
+          target="_blank"
+        />
+        <q-btn
+          type="a"
+          flat
+          round
           :icon="!$q.dark.isActive ? 'mdi-desk-lamp-on' : 'mdi-desk-lamp-off'"
           @click="$q.dark.toggle()"
         />

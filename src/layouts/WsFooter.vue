@@ -1,5 +1,5 @@
 <template>
-  <q-footer :class="$q.dark.isActive ? 'q-header--dark' : 'q-header--light'">
+  <q-footer :class="$q.dark.isActive ? 'q-footer--dark' : 'q-footer--light'">
     <q-toolbar>
       <q-toolbar-title>
         <q-avatar>
