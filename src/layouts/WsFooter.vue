@@ -13,6 +13,7 @@
 <script>
 import { useQuasar } from "quasar";
 export default {
+  name: "WsFooter",
   mounted() {
     const $q = useQuasar();
     console.log($q);

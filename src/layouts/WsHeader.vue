@@ -36,6 +36,7 @@
           href="https://www.facebook.com"
           target="_blank"
         />
+        <ws-search />
         <q-btn
           type="a"
           flat
@@ -49,7 +50,10 @@
 </template>
 <script>
 import { useQuasar } from "quasar";
+import WsSearch from "./WsSearch.vue";
 export default {
+  name: "WsHeader",
+  components: { WsSearch },
   mounted() {
     const $q = useQuasar();
     console.log($q);

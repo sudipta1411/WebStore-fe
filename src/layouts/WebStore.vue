@@ -21,6 +21,7 @@ import WsHeader from "./WsHeader.vue";
 import WsFooter from "./WsFooter.vue";
 
 export default {
+  name: "WsStore",
   data() {
     return {
       leftDrawerOpen: true,
