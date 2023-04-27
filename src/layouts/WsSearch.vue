@@ -49,3 +49,15 @@ export default {
   },
 };
 </script>
+<style>
+.ws-search {
+  width: 400px;
+  height: 43px;
+}
+.ws-search__field {
+  width: inherit;
+  height: inherit;
+  cursor: text;
+  transition: box-shadow 0.28s ease-in-out;
+}
+</style>
