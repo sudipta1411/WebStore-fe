@@ -78,14 +78,14 @@ export default {
 </script>
 <style>
 .ws-search {
-  width: 400px;
-  height: 43px;
+  width: 350px;
+  height: 40px;
 }
 .ws-search__field {
   width: inherit;
   height: inherit;
   cursor: text;
-  /*transition: box-shadow 0.28s ease-in-out;*/
+  transition: box-shadow 0.28s ease-in-out background-color 0.28s ease-in-out;
 }
 .ws-search input {
   font-size: 16px;
@@ -116,15 +116,15 @@ body.body--dark .ws-search input {
   color: #fff;
 }
 body.body--dark .ws-search__field {
-  background-color: rgba(#fff, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 body.body--dark .ws-search__icon {
   color: #00b4ff;
 }
 body.body--dark .ws-search__focused {
-  border: 1px solid #dddddd;
+  border: 1px solid #2c2a2a;
 }
 body.body--dark .ws-search__focused .ws-search__field {
-  background-color: rgba(0, 0, 0, 0.28);
+  background-color: rgba(255, 255, 255, 0.28);
 }
 </style>
