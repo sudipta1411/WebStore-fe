@@ -61,17 +61,29 @@
     transition-show="fade"
     transition-hide="fade"
   >
-    <q-card>
+    <q-card flat bordered>
       <q-card-section class="row items-center q-pb-none">
         <div class="text-h6">Login</div>
         <q-space />
         <q-btn icon="close" flat round dense v-close-popup />
       </q-card-section>
+      <q-separator inset color="orange" />
       <q-card-section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-        repellendus sit voluptate voluptas eveniet porro. Rerum blanditiis
-        perferendis totam, ea at omnis vel numquam exercitationem aut, natus
-        minima, porro labore.
+        <q-btn
+          rounded
+          color="red"
+          flat
+          icon="mdi-google"
+          label="Signin with Google"
+          @click="gLogin"
+        />
+        <q-btn
+          rounded
+          color="blue"
+          flat
+          icon="mdi-facebook"
+          label="Signin with Facebook"
+        />
       </q-card-section>
     </q-card>
   </q-dialog>
@@ -96,6 +108,7 @@ export default {
       console.log("login");
       this.loginDialogOpened = true;
     },
+    gLogin() {},
   },
   mounted() {
     const $q = useQuasar();
