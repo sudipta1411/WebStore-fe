@@ -1,15 +1,12 @@
 <template>
-  <q-layout
-    class="ws-store"
-    view="hhh lpR fff"
-    :class="$q.dark.isActive ? 'bg-black' : 'bg-secondary'"
-  >
+  <q-layout class="ws-store" view="hhh lpR fff">
     <ws-header />
     <q-drawer v-model="leftDrawerOpen" side="left" overlay bordered>
       <!-- drawer content -->
     </q-drawer>
 
     <q-page-container>
+      <ws-stars />
       <router-view />
     </q-page-container>
     <ws-footer />
@@ -20,6 +17,7 @@
 import { useQuasar } from "quasar";
 import WsHeader from "./WsHeader.vue";
 import WsFooter from "./WsFooter.vue";
+import WsStars from "../components/WsStars.vue";
 
 export default {
   name: "WsStore",
@@ -28,7 +26,7 @@ export default {
       leftDrawerOpen: true,
     };
   },
-  components: { WsHeader, WsFooter },
+  components: { WsHeader, WsFooter, WsStars },
   mounted() {
     const $q = useQuasar();
     console.log($q.dark.isActive);
@@ -39,5 +37,8 @@ export default {
 <style>
 .ws-store .q-page-container :target {
   scroll-margin-top: var(--scroll-margin-top);
+}
+body.body--light .ws-store {
+  background: rgb(238, 225, 182);
 }
 </style>
