@@ -36,4 +36,7 @@
   --header-quick-transition: 0.28s ease-in-out;
   --font-size: 16px;
   --brand-color: #00b4ff;
+  --store-background-color-light: rgb(238, 225, 182);
+  /*--store-background-color-dark: rgb(10, 26, 73);*/
+  --store-background-color-dark: rgb(0, 36, 81);
 }

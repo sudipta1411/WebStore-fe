@@ -112,7 +112,7 @@ body.body--light .ws-search input {
   color: #474747;
 }
 body.body--light .ws-search__field {
-  background: rgb(201, 197, 197);
+  background: rgb(219, 212, 212);
 }
 body.body--light .ws-search__focused {
   border: 1px solid #dddddd;

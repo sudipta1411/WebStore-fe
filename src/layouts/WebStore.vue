@@ -39,6 +39,9 @@ export default {
   scroll-margin-top: var(--scroll-margin-top);
 }
 body.body--light .ws-store {
-  background: rgb(238, 225, 182);
+  background: var(--store-background-color-light);
+}
+body.body--dark .ws-store {
+  background: var(--store-background-color-dark);
 }
 </style>
