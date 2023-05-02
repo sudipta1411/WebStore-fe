@@ -1,0 +1,22 @@
+:root {
+  --header-gradient-light-1: rgba(255, 255, 255, 1);
+  --header-gradient-light-2: rgba(246, 246, 236, 1);
+  --header-gradient-light-3: rgba(237, 237, 237, 1);
+
+  --footer-gradient-light-1: rgba(255, 255, 255, 1);
+  --footer-gradient-light-2: rgba(246, 246, 236, 1);
+  --footer-gradient-light-3: rgba(237, 237, 237, 1);
+
+  --header-gradient-dark-1: rgba(2, 10, 32, 1);
+  --header-gradient-dark-2: rgba(3, 5, 10, 1);
+  --header-gradient-dark-3: rgba(13, 15, 22, 1);
+
+  --footer-gradient-dark-1: rgba(2, 10, 32, 1);
+  --footer-gradient-dark-2: rgba(3, 5, 10, 1);
+  --footer-gradient-dark-3: rgba(13, 15, 22, 1);
+
+  --header-height: 95px;
+  --footer-height: 120px;
+
+  --scroll-margin-top: var(--header-height);
+}

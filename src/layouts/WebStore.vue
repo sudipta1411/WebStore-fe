@@ -1,5 +1,6 @@
 <template>
   <q-layout
+    class="ws-store"
     view="hhh lpR fff"
     :class="$q.dark.isActive ? 'bg-black' : 'bg-secondary'"
   >
@@ -35,3 +36,8 @@ export default {
   },
 };
 </script>
+<style>
+.ws-store .q-page-container :target {
+  scroll-margin-top: var(--scroll-margin-top);
+}
+</style>

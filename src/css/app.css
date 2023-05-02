@@ -1,4 +1,6 @@
 /* app global css */
+@import url("./variables.css");
+
 @font-face {
   font-family: bruno-ace;
   src: url(./fonts/BrunoAceSC-Regular.ttf);
@@ -9,19 +11,19 @@
 }
 
 .q-header {
-  height: 95px;
+  height: var(--header-height);
 }
 
 .q-footer {
-  height: 120px;
+  height: var(--footer-height);
 }
 
 .q-footer--light {
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(246, 246, 236, 1) 49%,
-    rgba(237, 237, 237, 1) 100%
+    var(--footer-gradient-light-1) 0%,
+    var(--footer-gradient-light-2) 49%,
+    var(--footer-gradient-light-3) 100%
   );
   color: black;
 }
@@ -29,18 +31,18 @@
 .q-header--dark {
   background: radial-gradient(
     circle,
-    rgba(2, 10, 32, 1) 0%,
-    rgba(3, 5, 10, 1) 49%,
-    rgba(13, 15, 22, 1) 100%
+    var(--header-gradient-dark-1) 0%,
+    var(--header-gradient-dark-2) 49%,
+    var(--header-gradient-dark-3) 100%
   );
   color: bisque;
 }
 .q-footer--dark {
   background: radial-gradient(
     circle,
-    rgba(2, 10, 32, 1) 0%,
-    rgba(3, 5, 10, 1) 49%,
-    rgba(13, 15, 22, 1) 100%
+    var(--footer-gradient-dark-1) 0%,
+    var(--footer-gradient-dark-2) 49%,
+    var(--footer-gradient-dark-3) 100%
   );
 
   color: bisque;
@@ -48,9 +50,9 @@
 .q-header--light {
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(246, 246, 236, 1) 49%,
-    rgba(237, 237, 237, 1) 100%
+    var(--header-gradient-light-1) 0%,
+    var(--header-gradient-light-2) 49%,
+    var(--header-gradient-light-3) 100%
   );
   color: black;
 }
