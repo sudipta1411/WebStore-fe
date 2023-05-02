@@ -60,6 +60,7 @@
   <q-dialog
     v-model="loginDialogOpened"
     no-esc-dismiss
+    no-shake
     no-backdrop-dismiss
     transition-show="fade"
     transition-hide="fade"
