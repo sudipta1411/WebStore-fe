@@ -11,25 +11,18 @@
       <q-card-section class="row items-center q-pb-none">
         <div class="text-h6">Login</div>
         <q-space />
-        <q-btn icon="close" flat round dense v-close-popup />
+        <q-btn icon="close" outline flat round dense v-close-popup />
       </q-card-section>
       <q-separator inset color="orange" />
       <q-card-section>
         <q-btn
           rounded
           color="red"
-          flat
           icon="mdi-google"
-          label="Signin with Google"
+          label="Google"
           @click="gLogin"
         />
-        <q-btn
-          rounded
-          color="blue"
-          flat
-          icon="mdi-facebook"
-          label="Signin with Facebook"
-        />
+        <q-btn rounded color="blue" icon="mdi-facebook" label="Facebook" />
       </q-card-section>
     </q-card>
   </q-dialog>
