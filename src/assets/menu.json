@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Test 1",
+    "icon": "travel_explore",
+    "path": "test1"
+  },
+  {
+    "name": "Test 2",
+    "icon": "code",
+    "path": "test2",
+    "children": [
+      {
+        "name": "Test21",
+        "path": "test21"
+      },
+      {
+        "name": "Test22",
+        "path": "test22"
+      }
+    ]
+  }
+]

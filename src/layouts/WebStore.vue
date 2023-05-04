@@ -1,10 +1,8 @@
 <template>
-  <q-layout class="ws-store" view="hhh lpR fff">
+  <!-- <q-layout class="ws-store" view="hhh lpR fff"> -->
+  <q-layout class="ws-store" view="hHh LpR fff">
     <ws-header />
-    <q-drawer v-model="leftDrawerOpen" side="left" overlay bordered>
-      <!-- drawer content -->
-    </q-drawer>
-
+    <ws-menu v-model="leftDrawerOpen" />
     <q-page-container>
       <ws-stars />
       <router-view />
@@ -18,6 +16,7 @@ import { useQuasar } from "quasar";
 import WsHeader from "./WsHeader.vue";
 import WsFooter from "./WsFooter.vue";
 import WsStars from "../components/WsStars.vue";
+import WsMenu from "../components/WsMenu.vue";
 
 export default {
   name: "WsStore",
@@ -26,11 +25,13 @@ export default {
       leftDrawerOpen: true,
     };
   },
-  components: { WsHeader, WsFooter, WsStars },
+  components: { WsHeader, WsFooter, WsStars, WsMenu },
   mounted() {
     const $q = useQuasar();
     console.log($q.dark.isActive);
     console.log($q.dark.mode);
+    console.log(this.$route);
+    console.log(this.$router);
   },
 };
 </script>

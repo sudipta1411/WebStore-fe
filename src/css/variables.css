@@ -39,4 +39,8 @@
   --store-background-color-light: rgb(238, 225, 182);
   /*--store-background-color-dark: rgb(10, 26, 73);*/
   --store-background-color-dark: rgb(0, 36, 81);
+
+  --menu-bg-color-light: var(--store-background-color-light);
+  --menu-bg-color-dark: var(--store-background-color-dark);
+  --menu-border-color: rgb(8 105 135 / 91%);
 }
