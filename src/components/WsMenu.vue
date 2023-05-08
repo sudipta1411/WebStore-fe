@@ -35,18 +35,21 @@ export default {
     },
   },
   methods: {
-    setMenuData(json) {
-      console.log(json);
-      this.menuData = json;
+    setMenuData(menu) {
+      console.log(menu);
+      this.menuData = menu;
     },
   },
   created() {
     fetch("/src/assets/menu.json")
-      .then((resp) => resp.json())
-      .then((json) => this.setMenuData(json))
-      /*.then((resp) => {
-        console.log(resp.json());
-      })*/
+      .then((resp) => {
+        if (resp.ok) {
+          return resp.json();
+        } else {
+          //TODO error handling
+        }
+      })
+      .then((menu) => this.setMenuData(menu))
       .catch((err) => {
         console.log(err);
       });
